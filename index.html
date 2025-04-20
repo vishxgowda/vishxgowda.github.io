@@ -1,0 +1,366 @@
+<!-- Replace your existing HTML with this updated version -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vishwanath Gowda B K</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-bg: #f5f5dc;
+      --card-bg: #ffffff;
+      --accent: #333;
+      --link: #00796B;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    html {
+      scroll-padding-top: 100px;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--primary-bg);
+      color: var(--accent);
+    }
+
+    nav {
+      background-color: var(--card-bg);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .logo span {
+      font-size: 14px;
+      font-weight: 400;
+      display: block;
+    }
+
+    .nav-links a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--link);
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 140px 20px 60px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 700px;
+      line-height: 1.6;
+    }
+
+    .profile-pic {
+      display: flex;
+      justify-content: center;
+      margin-top: -30px;
+      margin-bottom: 40px;
+    }
+
+    .profile-pic img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      border: 4px solid var(--card-bg);
+    }
+
+    .section {
+      background-color: var(--card-bg);
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 40px auto;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: var(--link);
+    }
+
+    .section p, .section a {
+      font-size: 18px;
+      line-height: 1.8;
+      color: var(--accent);
+    }
+
+    .section a {
+      text-decoration: none;
+      color: var(--link);
+      font-weight: 500;
+    }
+
+    .section a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: var(--card-bg);
+      text-align: center;
+      padding: 20px;
+      font-size: 16px;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+      margin-top: 60px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 12px;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links a {
+        margin-left: 15px;
+        font-size: 14px;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .section h2 {
+        font-size: 26px;
+      }
+
+      .section p {
+        font-size: 16px;
+      }
+
+      .profile-pic img {
+        width: 140px;
+        height: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+      Vishwanath Gowda B K
+      <span>AI & ML Model Trainer</span>
+    </div>
+    <div class="nav-links">
+      <a href="#about">About Me</a>
+      <a href="#resume">Resume</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Hello, I'm Vishwanath 👋</h1>
+    <p>I'm a Computer Science & Engineering (AI & ML) student and an aspiring AI & ML professional passionate about building impactful products.</p>
+  </section>
+
+  <!-- Profile Picture -->
+  <div class="profile-pic">
+    <img src="profile.jpg" alt="Vishwanath's Profile Picture">
+  </div>
+
+  <!-- About -->
+  <!-- Keep all remaining code unchanged below -->
+
+  <!-- About -->
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <p>Hey there! I’m a 4th-semester Computer Science & Engineering (AI & ML) student at Malnad College of Engineering, and I live a life that blends code, cows, and creativity. Yep, you read that right. I come from a proud farmer family — my mornings begin with dairy and farming duties before I head to college. After classes, I manage content for a YouTube channel (editing, planning, uploading), then it’s back to the farm, followed by gym time, and finally — late-night coding and content work. It’s a packed schedule, but I thrive on it. 🌾💪🎥💻</p>
+  
+    <p>I’m passionate about tech that solves real problems. I enjoy building projects more than just studying theory — I understand syntax, flow, and logic deeply, and I love turning rough ideas into polished solutions. Whether it's a full-stack web app, automating a task, or tweaking UI/UX, I get the job done.</p>
+  
+    <p>I’m actively looking for internships where I can bring this same energy — learn fast, contribute meaningfully, and grow alongside amazing teams. I believe in smart work, accountability, and adding value wherever I go.</p>
+  
+    <p>On the side, I experiment with AI tools, stay updated with startup culture, and dive deep into creative problem-solving. I’m not just building a career — I’m building momentum, and I’m ready to channel that into a role where I can truly shine.</p>
+  
+    <p>If you're looking for someone who’s consistent, curious, hardworking (with actual farm-hardened discipline!), and knows how to balance passion with performance — I might just be the guy you’re looking for. Let’s build something impactful together.</p>
+  </section>
+  
+  
+
+  <!-- Resume -->
+  <section id="resume" class="section">
+    <h2>Resume</h2>
+
+    <p><strong>Vishwanath Gowda B K</strong><br>
+       Junior AI/ML Developer<br>
+       📍 Hassan, Karnataka<br> 
+
+    <h3>Education</h3>
+    <ul>
+      <li><strong>Sri CKS High School</strong>, Hassan, Karnataka – High School (2017 - 2020)</li>
+      <li><strong>Brigade PU College</strong>, Hassan, Karnataka – Science (PCMB) Pre-University (2020 - 2022)</li>
+      <li><strong>Malnad College Of Engineering</strong>, Hassan, Karnataka – B.E. in CS&E (AI & ML) (2023 - Present)</li>
+    </ul>
+
+    <h3>Experience</h3>
+    <li><strong>InAmigos Foundation (IAF)</strong> | Social Worker<br>
+    Hassan, Karnataka | OCT 2024 - JAN 2025<br>
+    - Worked on community projects in education, health, and sustainability.<br>
+    - Organized events and campaigns to raise awareness and develop key skills.</li>
+
+    <li><strong>GnanaDeeksha Institute of Paramedical Sciences</strong> | IT Support Specialist<br>
+    Hassan, Karnataka | JULY 2024 - APR 2025<br>
+    - Reduced system downtime by 30% through proactive maintenance strategies.<br>
+    - Improved IT asset management by creating a detailed inventory and preventive maintenance schedules.<br>
+    - Played a key role in transitioning the college’s operations to a more digital and automated system during online classes.</li>
+
+    <h3>Skills</h3>
+    <ul>
+      <li><strong>Programming Languages:</strong> C, C++, Python, HTML, Java</li>
+      <li><strong>Libraries/Frameworks:</strong> TensorFlow, PyTorch, scikit-learn, Keras</li>
+      <li><strong>Tools / Platforms:</strong> NumPy, Pandas, Matplotlib, Seaborn, Jupyter Notebook, VS Code, Google Colab, Anaconda, APIs (REST), Docker</li>
+      <li><strong>Databases:</strong> SQL, MongoDB</li>
+    </ul>
+    <h3>Certifications</h3>
+    <ul>
+      <li>
+        <a href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIxMTY5IiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvNzUyMzM5NF83NjA0MzU4MTczMDc0NDc5ODk4NC5wbmciLCJ1c2VybmFtZSI6IlZJU0hXQU5BVEggR09XREEgQiBLIn0&utm_source=shared-certificate&utm_medium=app_lms&utm_campaign=shared-certificate-promotion&referrer=https%3A%2F%2Fcertificates.simplicdn.net%2Fshare%2F7523394_76043581730744798984.png&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87MLcjJ1EssKNDLyczL1rfI9XQpdE6PTPNPsq8rSk1LLSrKzEuPTyrKLy9OLbL1AapJTfHMAwBDXueLPwAAAA%3D%3D&_branch_match_id=1382051133286986866" target="_blank">
+          Programming with Python
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/learning/certificates/091849e96c357634ab595f0d7a419ecb220673394f213d8b1685b8e07dad300f?trk=share_certificate" target="_blank">
+          Python for Automation
+        </a>
+      </li>
+    </ul>
+    
+
+<!-- Projects Section -->
+<section id="projects" class="section">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <strong><a href="https://github.com/vishxgowda/SecureSense" target="_blank">SecureSense</a></strong> – Cybersecurity threat detection system using ML. Built with Python, TensorFlow, scikit-learn, REST APIs. Included real-time monitoring, visualizations, and full documentation.
+      </li>
+      <li>
+        <strong><a href="https://drive.google.com/drive/u/0/folders/1htq0CU_KjzX7arLjbdGZC1CUiGY67U7I" target="_blank">TrashSense AI</a></strong> – Waste classification using AI-powered computer vision. Developed with Python, OpenCV, TensorFlow, Flask. Integrated with camera systems and web interface for real-time detection and disposal guidance.
+      </li>
+      <li>
+        <strong><a href="https://drive.google.com/drive/folders/12_agPiqDdfupAU8g1dPoyaTLvgVOUMXF?usp=sharing" target="_blank">MediScan AI Suite</a></strong> – Developed a suite of AI models for healthcare with over <strong>95% accuracy</strong>, focusing on real-world medical datasets. Models include:
+        <ul>
+          <li>Cancer detection</li>
+          <li>Heart disease prediction</li>
+          <li>HIV risk classification</li>
+          <li>DNA sequencing interpretation</li>
+          <li>X-ray and MRI scan analysis</li>
+          <li>Diabetes and obesity prediction</li>
+        </ul>
+        Built using Python, Pandas, scikit-learn, TensorFlow, and Streamlit. The models prioritize interpretability, performance tuning, and ease of deployment for practical healthcare applications.
+      </li>
+    </ul>
+  </section>
+  
+
+ <!-- Contact Section -->
+<section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>
+      📧 <a href="mailto:vishwanath.gowdabk@gmail.com">vishwanath.gowdabk@gmail.com</a><br>
+      🔗 <a href="https://www.linkedin.com/in/vishwanath-gowda-b-k-177a07297/" target="_blank">LinkedIn</a><br>
+      🐦 <a href="https://x.com/vishugowda_" target="_blank">Twitter</a><br>
+      📞 <a href="tel:+918217816168">+91 8217816168</a>
+    </p>
+  
+    <!-- Upload Form -->
+    <form 
+      action="https://formspree.io/f/mgvagrpp" 
+      method="POST" 
+      enctype="multipart/form-data"
+      style="display: flex; flex-direction: column; gap: 15px; max-width: 400px; margin-top: 20px; font-family: Arial, sans-serif;"
+    >
+      <label style="font-weight: bold;">
+        Your Email:
+        <input 
+          type="email" 
+          name="email" 
+          required 
+          placeholder="you@example.com"
+          style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px;"
+        >
+      </label>
+  
+      <label style="font-weight: bold;">
+        Message:
+        <textarea 
+          name="message" 
+          rows="4" 
+          placeholder="Your message here..."
+          style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px;"
+        ></textarea>
+      </label>
+  
+      <label style="font-weight: bold;">
+        Upload a File:
+        <input 
+          type="file" 
+          name="upload" 
+          required
+          style="margin-top: 5px;"
+        >
+      </label>
+  
+      <button 
+        type="submit"
+        style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;"
+      >
+        Send
+      </button>
+    </form>
+  </section>
+  
+  
+  <footer>
+    &copy; 2025 Vishwanath Gowda B K. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
