@@ -73,9 +73,26 @@
       padding: 140px 20px 60px;
     }
 
-    .hero h1 {
+    /* Typing effect styles */
+    .typing {
       font-size: 48px;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 4px solid var(--accent);
+      width: 0;
+      animation: typing 3.5s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
       margin-bottom: 20px;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 19ch; } /* Adjust ch count to length of text */
+    }
+
+    @keyframes blink-caret {
+      0%, 100% { border-color: transparent; }
+      50% { border-color: var(--accent); }
     }
 
     .hero p {
@@ -154,8 +171,9 @@
         font-size: 14px;
       }
 
-      .hero h1 {
+      .typing {
         font-size: 32px;
+        width: 19ch; /* Make sure it fits smaller screens */
       }
 
       .hero p {
@@ -196,8 +214,8 @@
 
   
   <!-- Hero -->
-  <section id ="home" class="hero">
-    <h1>Hello, I'm Vishwanath 👋</h1>
+  <section id="home" class="hero">
+    <h1 class="typing">Hello, I'm Vishwanath 👋</h1>
     <p>I'm a Computer Science & Engineering (AI & ML) student and an aspiring AI & ML professional passionate about building impactful products.</p>
   </section>
 
@@ -249,65 +267,44 @@
 
   <h3>Skills</h3>
   <ul>
-    <li><strong>Programming Languages:</strong> C, C++, Python, HTML, Java</li>
-    <li><strong>Libraries/Frameworks:</strong> TensorFlow, PyTorch, scikit-learn, Keras</li>
-    <li><strong>Tools / Platforms:</strong> NumPy, Pandas, Matplotlib, Seaborn, Jupyter Notebook, VS Code, Google Colab, Anaconda, APIs (REST), Docker</li>
-    <li><strong>Databases:</strong> SQL, MongoDB</li>
+    <li>Programming: Python, JavaScript, HTML5, CSS3</li>
+    <li>Frameworks: React.js (beginner), Flask (basic)</li>
+    <li>Tools: VS Code, Git, GitHub</li>
+    <li>AI & ML: Familiar with TensorFlow, basic model training and deployment</li>
+    <li>Content Creation: Video editing, planning, social media management</li>
   </ul>
-  <h3>Certifications</h3>
-  <ul>
-    <li>
-      <a href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIxMTY5IiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvNzUyMzM5NF83NjA0MzU4MTczMDc0NDc5ODk4NC5wbmciLCJ1c2VybmFtZSI6IlZJU0hXQU5BVEggR09XREEgQiBLIn0&utm_source=shared-certificate&utm_medium=app_lms&utm_campaign=shared-certificate-promotion&referrer=https%3A%2F%2Fcertificates.simplicdn.net%2Fshare%2F7523394_76043581730744798984.png&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87MLcjJ1EssKNDLyczL1rfI9XQpdE6PTPNPsq8rSk1LLSrKzEuPTyrKLy9OLbL1AapJTfHMAwBDXueLPwAAAA%3D%3D&_branch_match_id=1382051133286986866" target="_blank">
-        Programming with Python
-      </a>
-    </li>
-    <li>
-      <a href="https://www.linkedin.com/learning/certificates/091849e96c357634ab595f0d7a419ecb220673394f213d8b1685b8e07dad300f?trk=share_certificate" target="_blank">
-        Python for Automation
-      </a>
-    </li>
-  </ul>
-  </section>
 
-  <!-- Projects Section -->
-<section id="projects" class="section">
-  <h2>Projects</h2>
+  <h3>Interests</h3>
   <ul>
-    <li>
-      <strong><a href="https://github.com/vishxgowda/SecureSense" target="_blank">SecureSense</a></strong> – Cybersecurity threat detection system using ML. Built with Python, TensorFlow, scikit-learn, REST APIs. Included real-time monitoring, visualizations, and full documentation.
-    </li>
-    <li>
-      <strong><a href="https://drive.google.com/drive/u/0/folders/1htq0CU_KjzX7arLjbdGZC1CUiGY67U7I" target="_blank">TrashSense AI</a></strong> – Waste classification using AI-powered computer vision. Developed with Python, OpenCV, TensorFlow, Flask. Integrated with camera systems and web interface for real-time detection and disposal guidance.
-    </li>
-    <li>
-      <strong><a href="https://drive.google.com/drive/folders/12_agPiqDdfupAU8g1dPoyaTLvgVOUMXF?usp=sharing" target="_blank">MediScan AI Suite</a></strong> – Developed a suite of AI models for healthcare with over <strong>95% accuracy</strong>, focusing on real-world medical datasets. Models include:
-      <ul>
-        <li>Cancer detection</li>
-        <li>Heart disease prediction</li>
-        <li>HIV risk classification</li>
-        <li>DNA sequencing interpretation</li>
-        <li>X-ray and MRI scan analysis</li>
-        <li>Diabetes and obesity prediction</li>
-      </ul>
-      Built using Python, Pandas, scikit-learn, TensorFlow, and Streamlit. The models prioritize interpretability, performance tuning, and ease of deployment for practical healthcare applications.
-    </li>
+    <li>Full stack web development</li>
+    <li>AI & ML research and projects</li>
+    <li>Fitness and gym workouts</li>
+    <li>Content creation and video editing</li>
+    <li>Startup culture and entrepreneurship</li>
   </ul>
 </section>
 
- <!-- Contact Section -->
-<section id="contact" class="section">
-  <h2>Contact</h2>
-  <p>
-    📧 <a href="mailto:vishwanath.gowdabk@gmail.com">vishwanath.gowdabk@gmail.com</a><br>
-    🔗 <a href="https://www.linkedin.com/in/vishwanath-gowda-b-k-177a07297/" target="_blank">LinkedIn</a><br>
-    🐦 <a href="https://x.com/vishugowda_" target="_blank">Twitter</a><br>
-    🧑‍💻 <a href="https://www.upwork.com/freelancers/~017cf6ed5778176cf3?mp_source=share" target="_blank">Upwork</a><br>
-    📞 <a href="tel:+918217816168">+91 8217816168</a>
-  </p></section>
+<!-- Projects -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
 
-  <footer>
-    &copy; 2025 Vishwanath Gowda B K. All rights reserved.
-  </footer>
+  <ul>
+    <li><strong>Portfolio Website</strong> — A personal portfolio showcasing my skills and projects. Built with HTML, CSS, and JavaScript.</li>
+    <li><strong>ChatBox App</strong> — Real-time chat application using Flask and WebSocket.</li>
+    <li><strong>Fitness Tracker</strong> — A web app to log workouts and track progress, built with React.js.</li>
+    <li><strong>YouTube Content Management</strong> — Managed and edited videos for a YouTube channel, improving content consistency and audience engagement.</li>
+  </ul>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+  <p>If you'd like to get in touch, please email me at <a href="mailto:vishwanath.gowdabk@gmail.com">vishwanath.gowdabk@gmail.com</a> or call me at <a href="tel:+918217816168">+91 82178 16168</a>.</p>
+</section>
+
+<footer>
+  &copy; 2025 Vishwanath Gowda B K. All rights reserved.
+</footer>
 
 </body>
 </html>
